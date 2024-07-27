@@ -1,0 +1,61 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-y: auto;
+}
+
+.temp-container {
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    height: 200px;
+    width: 300px;
+    margin-top: 15px;
+    padding: 20px 15px;
+}
+
+.temp-container > button > a {
+    text-decoration: none;
+    color: white;
+}
+
+.temp-container > button {
+    background-color: rgb(213, 31, 31);
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.profile-content-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 60px;
+}
+
+.profile-content-title > p {
+    margin-bottom: 20px;
+}
+
+.profile-content {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.profile-content > p {
+    margin-bottom: 20px;
+}

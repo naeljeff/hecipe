@@ -1,0 +1,95 @@
+.transaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow-y: auto;
+}
+
+.table-wrapper {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.transaction-table {
+  table-layout: fixed;
+  width: 100%;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+.transaction-table th {
+  background-color: #dc2626;
+  color: white;
+  padding: 10px;
+}
+
+.transaction-table td {
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+.table-item {
+  text-align: center;
+  border-bottom: 0.5px solid #7e838b;
+}
+
+.table-item a {
+  color: #dc2626;
+  text-decoration: underline;
+}
+
+/*Transaction Detail*/
+
+.image-item > img {
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+}
+
+.transaction-detail {
+  padding-bottom: 30px;
+}
+
+.transaction-detail .transaction-table {
+  table-layout: auto;
+  width: 100%;
+}
+
+.total-price {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.total-price > p {
+  text-align: right;
+}
+
+.total-price > .btn-success a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-success {
+  background-color: #218838;
+  width: fit-content;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .transaction-detail .transaction-table {
+    table-layout: fixed;
+  }
+  .transaction-table td {
+    padding: 0;
+  }
+  .transaction-table tr:first-child th {
+    font-size: 14px;
+    padding: 2px;
+  }
+}

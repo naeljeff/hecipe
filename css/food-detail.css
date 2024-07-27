@@ -1,0 +1,173 @@
+.food-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-y: auto;
+}
+
+.fd-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+.fd-content-left > img {
+    max-height: 300px;
+    margin: 10px;
+}
+
+.fd-description {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.fd-content-left{
+    display: flex;
+    flex-direction: row;
+}
+
+.fd-content-right{
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.fd-content-right button{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.fd-content-right > button > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.fd-description > p {
+    font-size: 15px;
+
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+
+#fd-comment-title > h3 {
+    font-weight: normal;
+    font-size: 22px;
+
+    margin-top: 20px;
+}
+
+.fd-comments {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    
+    width: 100%;
+}
+
+.fd-comments-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fd-comments-left p {
+    font-size: 15px;
+
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+
+.fd-comments > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.editFood {
+    background-color: #f59e0b;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.editFood a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.deleteFood {
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.deleteFood a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.post-comment {
+    width: 100%;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.comment-form textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    resize: none;
+}
+
+.comment-form textarea::placeholder {
+    font-size: 16px;
+}
+
+.comment-form button {
+    align-self: flex-end;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+    margin-top: 10px;
+
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

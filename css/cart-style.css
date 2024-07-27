@@ -1,0 +1,90 @@
+.cart {
+  padding-bottom: 30px;
+}
+
+.cart .transaction-table {
+  table-layout: auto;
+  width: 100%;
+}
+
+.cart .quantity-input {
+  width: 50px;
+  margin: 0 auto;
+}
+
+.quantity-input input[type="number"],
+.quantity-input > .save-btn {
+  width: 50px;
+  border: 0.5px solid #e9e9ed;
+}
+
+.quantity-input input[type="number"] {
+  padding: 2px 0 2px 2px;
+}
+
+.quantity-input input[type="number"]::-webkit-inner-spin-button,
+.quantity-input input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  box-shadow: none;
+  font-size: 12px;
+  margin-top: 2px;
+  padding: 6px 10px;
+}
+
+.total-price > span {
+  display: flex;
+  flex-direction: row;
+}
+
+#total-price-text {
+  margin-left: 6px;
+}
+
+.quantity-input > .save-btn {
+  text-decoration: none;
+  color: white;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.delete-btn > a,
+.checkout-btn > a {
+  color: white;
+  text-decoration: none;
+}
+
+.empty-cart-info,
+.empty-transaction-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-cart-info > .btn-prime,
+.empty-transaction-info > .btn-prime {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  .cart .transaction-table {
+    table-layout: fixed;
+  }
+  .cart .transaction-table tr:first-child th {
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  .cart .table-item td:last-child .btn-prime {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .quantity-input > .btn-warning {
+    padding: 5px;
+  }
+}
